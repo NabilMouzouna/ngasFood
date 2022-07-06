@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #0F9D58;
+    --background-color: #f0f3f7;
+    --secon-color: #9da2ad;
+    --grey: #7a7a7b;
+    --white: #ffffffdd;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{overflow: hidden;}
+section{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('pages/assets/katherine-chase-4MMK78S7eyk-unsplash.jpg');
+    
+}
+main {
+    width: 70vw;
+    height: 70vh;
+    padding: 4rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+section,main{
+    display: grid;
+    place-content: center;
+}
+.logo{
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.logo h1{
+        font-size: 5rem;
+        color: var(--primary-color);
+}
+.container{
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.website{
+    padding: 1rem 5rem;
+    background-color: var(--primary-color);
+    border: 0.125rem solid var(--primary-color);
+    border-radius: 2rem;
+    color: white;
+    margin: 3rem 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s ease-in-out all;
+    color: white;
+}
+.website:hover{
+    color: var(--primary-color);
+    background-color: white;
+}
+.wifi h1,.wifi p{
+    padding-bottom: 10px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: auto;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:500px){
+    .logo h1{
+        font-size: 2rem;
+    }
+    .logo p{
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .website{
+        padding: .5rem 4rem;
+        font-size: 10px;
+    }
+}
